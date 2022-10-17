@@ -1,4 +1,5 @@
 <html lang="en"><head>
+
     <base href= "../">
 
     <meta charset="utf-8">
@@ -30,10 +31,10 @@
     <link rel="stylesheet" href="css/vendors/simplebar.css">
     <!-- Main styles for this application-->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/query.css" rel="stylesheet">
     <!-- We use those styles to show code examples, you should remove them in your application.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
     <link href="css/examples.css" rel="stylesheet">
-    <link href="css/query.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-5&amp;l=dataLayer&amp;cx=c"></script>
@@ -53,10 +54,10 @@
     </script>
 </head>
   <body>
-   
+    
     <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar" w3-include-html="Templates/sidebar.html"></div>
 
-   
+    
     <div class="wrapper d-flex flex-column min-vh-100 bg-light">
       <header class="header header-sticky mb-4">
         <div class="container-fluid">
@@ -138,37 +139,64 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb my-0 ms-2">
               <li class="breadcrumb-item">
-                <!-- if breadcrumb is single--><span>Home</span>
+                <!-- FORMULAIRE AVEC FILTRE ET CLIENT ANNONCE -->
+                
+                
+                <span>Home</span>
               </li>
               <li class="breadcrumb-item active"><span>Blank</span></li>
             </ol>
           </nav>
         </div>
       </header>
-      <div class="body flex-grow-1 px-3">
-        <div class="container-lg">
-        </div><div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-189">
-                        <ul class="list-group">
-                          <li class="list-group-item">Calendrier second semestre 2022</li>
-                          <li class="list-group-item list-group-item-primary">Réunion avec le groupe ARM le 12 Octobre 2022</li>
-                          <li class="list-group-item list-group-item-secondary">Week-end d'intégration le 14 Octobre 2022</li>
-                          <li class="list-group-item list-group-item-success">Réunion des affranchis le 17 Octobre 2022</li>
-                          <li class="list-group-item list-group-item-danger">Soirée a thème le 23 Novembre 2022</li>
-                          <li class="list-group-item list-group-item-warning">Forum étudiant avec l'entreprise le 26 Novembre 2022</li>
-                          <li class="list-group-item list-group-item-info">Rencontre avec le président le 3 Décembre 2022</li>
-                          <li class="list-group-item list-group-item-light">Noel en entreprise le 24 et 25 Décembre 2022</li>
-                          <li class="list-group-item list-group-item-dark">Réveillon en entreprise le 31 Décembre 2022</li>
-                        </ul>
+    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-593">
+                        <label class="form-label" for="exampleDataList">Datalist example</label>
+                        <input class="form-control" id="exampleDataList" list="datalistOptions" placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                          <option value="Mr Rawad"></option>
+                          <option value="Mr Stephen"></option>
+                          <option value="Mr Rouchaud"></option>
+                          <option value="Mr Carlos"></option>
+                          <option value="Mr kokard"></option>
+                        </datalist>
                       </div>
-                    </div>
-                    
+                      <div class="tab-content rounded-bottom">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-140">
+                          <div class="list-group"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Karla Gerl</h5><small>samedi 16:09</small>
+                              </div>
+                              <p class="mb-1">Seconde équipe lien TEAMS pour les réunion en visio.</p><small>Bonjour à tous,
+
+ 
+
+                                Pour rappel, les réunion dispensés en visio...</small>
+                            </a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Claire Lanle</h5><small class="text-medium-emphasis">Vendredi 12:56</small>
+                              </div>
+                              <p class="mb-1">Suite à la TRE du 06/10/2022.</p><small class="text-medium-emphasis">Bonjour à tous,
+
+ 
+
+                                Nous vous remercions pour votre écoute...</small>
+                            </a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Pierre Rochard</h5><small class="text-medium-emphasis">Mercredi 14:59</small>
+                              </div>
+                              <p class="mb-1"> Je veut accéder à votre Pdf...</p><small class="text-medium-emphasis">Demandée par :  Pierre Rochard.</small>
+                            </a></div>
+                        </div>
+                      </div>
+                    </div></div></div></div>
+      
+
       </div>
       <footer class="footer">
         <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
       </footer>
-    </div>
+    
     <!-- CoreUI and necessary plugins-->
     <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
     <script src="vendors/simplebar/js/simplebar.min.js"></script>
